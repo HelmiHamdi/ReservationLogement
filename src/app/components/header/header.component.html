@@ -1,10 +1,12 @@
 <nav class="navbar bg-light fixed-top" >
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><i class="fa fa-renren" aria-hidden="true" style="font-size: 30px; color: #6A5ACD;"></i></a>
-    <a style="margin-left: auto; margin-right: 100px;"  [routerLink]="['hote']">Mode Hôte</a>
-  
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"  aria-controls="offcanvasNavbar" style="color:#6A5ACD ;">
+    <a class="navbar-brand" [routerLink]="['/home']"><i class="fa fa-renren" aria-hidden="true" style="font-size: 30px; color: hsl(248, 53%, 58%);"></i></a>
+    <a class="navbar-brand" [routerLink]="['/hote']" style="margin-left: 800px; font-family: serif;font-size: medium;color: #6A5ACD; border: 2px solid #6A5ACD;padding: 10px;border-radius: 25px;">Mode Hote</a>
+    <i class="fa fa-globe fa-lg" aria-hidden="true"></i>
+    <div class="custom-button">
+    <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"  aria-controls="offcanvasNavbar" style="color:#6A5ACD ;">
       <span class="navbar-toggler-icon" ></span>
     </button>
+  </div>
   </div>
 </nav>

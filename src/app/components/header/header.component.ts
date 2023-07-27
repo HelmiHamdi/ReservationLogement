@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+ /* isButtonActive = false;
 
+  toggleBorder() {
+    this.isButtonActive = !this.isButtonActive;
+  }*/
 }
