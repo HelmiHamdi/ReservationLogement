@@ -10,6 +10,8 @@ import { HoteComponent } from './components/hote/hote.component';
 import { LoginComponent } from './components/login/login.component';
 import { SingupComponent } from './components/singup/singup.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SideNavComponent } from './components/side-nav/side-nav.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +19,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     HoteComponent,
     LoginComponent,
-    SingupComponent
+    SingupComponent,
+    SideNavComponent,
+    DashboardComponent
 
   ],
   imports: [
