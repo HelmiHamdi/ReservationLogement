@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./hote.component.css']
 })
 export class HoteComponent {
-
+ title ='HeaderSideNav';
+ sideNavStatus: boolean=false;
 }

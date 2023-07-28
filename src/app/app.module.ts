@@ -3,33 +3,41 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from "@angular/common";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
-import {IonicModule  } from "@ionic/angular";
-import { HoteComponent } from './components/hote/hote.component';
 import { LoginComponent } from './components/login/login.component';
 import { SingupComponent } from './components/singup/singup.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatIconModule } from "@angular/material/icon";
+import {MatButtonModule} from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { HeaderComponent } from './components/header/header.component';
+import { NavComponent } from './components/nav/nav.component';
+import { HoteComponent } from './components/hote/hote.component';
+
+
 @NgModule({
   declarations: [
-    AppComponent,
     HeaderComponent,
+    AppComponent,
     HomeComponent,
-    HoteComponent,
     LoginComponent,
     SingupComponent,
-    SideNavComponent,
-    DashboardComponent
-
-  ],
+    DashboardComponent,
+    NavComponent,
+    HoteComponent,
+    
+     ],
   imports: [
     CommonModule,
     BrowserModule,
     AppRoutingModule,
-    IonicModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatButtonModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
