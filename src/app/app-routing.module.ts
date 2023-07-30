@@ -9,7 +9,9 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NavComponent } from './components/nav/nav.component';
 import { HoteComponent } from './components/hote/hote.component';
-import { ContactComponent } from './contact/contact.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { ChangepasswordComponent } from './components/changepassword/changepassword.component';
 
 
 
@@ -24,7 +26,9 @@ const routes: Routes = [
   {path:'',component:HeaderComponent},
   {path:'nav',component:NavComponent},
   {path:'hote',component:HoteComponent},
-  {path:'contact',component:ContactComponent}
+  {path:'contact',component:ContactComponent},
+  {path:'profile',component:ProfileComponent},
+  {path:'contact',component:ChangepasswordComponent}
 
 ];
 
