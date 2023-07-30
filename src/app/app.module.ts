@@ -15,6 +15,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { HeaderComponent } from './components/header/header.component';
 import { NavComponent } from './components/nav/nav.component';
 import { HoteComponent } from './components/hote/hote.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { HoteComponent } from './components/hote/hote.component';
     DashboardComponent,
     NavComponent,
     HoteComponent,
+    ContactComponent,
     
      ],
   imports: [

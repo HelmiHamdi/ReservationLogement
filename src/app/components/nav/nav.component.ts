@@ -12,36 +12,43 @@ export class NavComponent implements OnInit {
       number: '1',
       name: 'home',
       icon: 'fa-solid fa-house',
+      url:'#',
     },
     {
       number: '2',
       name: 'Analytics',
       icon: 'fa-solid fa-chart-line',
+      url:'#',
     },
     {
       number: '3',
       name: 'Products',
       icon: 'fa-solid fa-box',
+      url:'#',
     },
     {
       number: '4',
       name: 'Order',
       icon: 'fa-solid fa-cart-shopping',
+      url:'#',
     },
     {
       number: '5',
       name: 'Settings',
       icon: 'fa-solid fa-gear',
+      url:'#',
     },
     {
       number: '6',
       name: 'About',
       icon: 'fa-solid fa-circle-info',
+      url:'#',
     },
     {
       number: '7',
       name: 'Contact',
       icon: 'fa-solid fa-phone',
+      url:'/contact',
     },
   ]
   ngOnInit(): void {
