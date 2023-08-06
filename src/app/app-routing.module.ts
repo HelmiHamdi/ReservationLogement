@@ -28,7 +28,8 @@ const routes: Routes = [
   {path:'hote',component:HoteComponent},
   {path:'contact',component:ContactComponent},
   {path:'profile',component:ProfileComponent},
-  {path:'contact',component:ChangepasswordComponent}
+  {path:'change',component:ChangepasswordComponent},
+  
 
 ];
 
