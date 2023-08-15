@@ -6,15 +6,15 @@
                     <h1>Login</h1>
                     <h6 style="font-size: 18px;">please enter email and password !!!</h6>
                 </div>
-                <form action="">
+                <form action="" [formGroup]="loginform" (ngSubmit)="login()">
                     <div class="mb-3">
                         <!--label for="exampleInputEmail1" class="form-label">Email address</label--> 
-                         <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter your E-mail">
+                         <input type="email" class="form-control" aria-describedby="emailHelp" formControlName="email" placeholder="Enter your E-mail">
                       </div>
                       <div class="mb-3">
                         <!--label for="exampleInputPassword1" class="form-label">Password</label> -->
                         <div class="form-group">
-                        <input [type]="changetype?'password':'text'" class="form-control" placeholder="Enter your password">
+                        <input [type]="changetype?'password':'text'" class="form-control" formControlName="password" placeholder="Enter your password">
                         <span class="eyeicon" (click)="viewPass()"><i [ngClass]="visible?'fa fa-eye':'fa fa-eye-slash'"></i></span>
                         </div>
                       </div>

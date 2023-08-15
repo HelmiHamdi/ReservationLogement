@@ -1,5 +1,24 @@
 {
   "user": [
-   
+    {
+      "nom": "Hamdi",
+      "prenom": "Helmi",
+      "dateNaissance": "2023-08-25",
+      "email": "helmihamdi977@gmail.com",
+      "password": "fdffdsf",
+      "phone": 27128539,
+      "gender": "Homme",
+      "id": 1
+    },
+    {
+      "nom": "Sarra",
+      "prenom": "Hamdi",
+      "dateNaissance": "1995-06-09",
+      "email": "sarra@gmail.com",
+      "password": "Amir",
+      "phone": 98563124,
+      "gender": "Homme",
+      "id": 2
+    }
   ]
 }

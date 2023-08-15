@@ -6,36 +6,38 @@
                     <h1>Register</h1>
                     <h6 style="font-size: 18px;">please enter your information !!!</h6>
                 </div>
-                <form action="">
+                <form action="" [formGroup]="registerform" (ngSubmit)="proceedregisteration()">
+                    <!-- <div class="mb-3">
+                        <input type="number" class="form-control" formControlName="id"  placeholder="Cin">
+                     </div> -->
                     <div class="mb-3">
-                     
-                         <input type="text" class="form-control"  placeholder="First Name">
+                         <input type="text" class="form-control"  formControlName="nom" placeholder="First Name">
                       </div>
                       <div class="mb-3">
                        
-                         <input type="text" class="form-control"placeholder="Last Name">
+                         <input type="text" class="form-control" formControlName="prenom" placeholder="Last Name">
                       </div>
                       <div class="mb-3">
                        
-                         <input type="date" class="form-control"  placeholder="Date of Brith">
+                         <input type="date" class="form-control" formControlName="dateNaissance" placeholder="Date of Brith">
                       </div>
                       <div class="mb-3">
                        
-                         <input type="email" class="form-control"  placeholder="E-mail">
+                         <input type="email" class="form-control" formControlName="email" placeholder="E-mail">
                       </div>
                       <div class="mb-3">
                        
                         <div class="form-group">
-                        <input [type]="changetype?'password':'text'" class="form-control" placeholder="Password">
+                        <input [type]="changetype?'password':'text'" class="form-control" formControlName="password" placeholder="Password">
                         <span class="eyeicon" (click)="viewPass()"><i [ngClass]="visible?'fa fa-eye':'fa fa-eye-slash'"></i></span>
                         </div>
                       </div>
                       <div class="mb-3"> 
-                         <input type="number" class="form-control" a placeholder="Phone">
+                         <input type="number" class="form-control" formControlName="phone" placeholder="Phone">
                       </div>
-                      <div class="mb-3">
+                      <div class="mb-3" >
                         <label for="Homme"> Homme&nbsp; </label>
-                        <INPUT TYPE ="radio" NAME ="sexe" ID="Homme" VALUE="Homme" CHECKED>
+                        <INPUT TYPE ="radio" NAME ="sexe" ID="Homme" VALUE="Homme" CHECKED >
                             <label for="Femme" style="margin-left: 55%;"> Femme&nbsp; </label>
                             <INPUT TYPE ="radio" NAME ="sexe" ID="Femme" VALUE="Femme">
                             

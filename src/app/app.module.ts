@@ -19,7 +19,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { ChangepasswordComponent } from './components/changepassword/changepassword.component';
 import {HttpClientModule} from '@angular/common/http';
-
+import { ToastrModule } from "ngx-toastr";
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,9 @@ import {HttpClientModule} from '@angular/common/http';
     MatIconModule,
     MatButtonModule,
     MatToolbarModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
