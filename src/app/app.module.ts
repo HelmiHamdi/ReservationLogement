@@ -18,6 +18,7 @@ import { HoteComponent } from './components/hote/hote.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { ChangepasswordComponent } from './components/changepassword/changepassword.component';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { ChangepasswordComponent } from './components/changepassword/changepassw
     MatSidenavModule,
     MatIconModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
