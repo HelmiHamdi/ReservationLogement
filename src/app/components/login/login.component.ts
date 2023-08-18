@@ -25,9 +25,14 @@ loginform=this.builder.group({
 });
 
 login(){
+  
   if (this.loginform.valid) {
     this.service.GetbyCode(this.loginform.value).subscribe((res: any)=>{
      const user = res.find((a:any)=>{
+      // if (!a.isactive) {
+      //   this.toastr.error('user not active');
+      //   return false;
+      // }
       return a.email === this.loginform.value.email && a.password === this.loginform.value.password;
      });
      if (user) {

@@ -1,0 +1,44 @@
+<h1 mat-dialog-title>Add Reservation Form</h1>
+<div mat-dialog-content>
+  <!-- <mat-form-field appearance="outline">
+    <mat-label>id</mat-label>
+    <input matInput placeholder="Id_Reservation" />
+  </mat-form-field> -->
+  <form action="" [formGroup]="reserveForm">
+  <mat-form-field appearance="outline">
+    <mat-label>id_User</mat-label>
+    <input type="number" formControlName="id_user" matInput placeholder="Id_User" />
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>id_Logement</mat-label>
+    <input type="number" formControlName="id_logement" matInput placeholder="Id_Logement" />
+  </mat-form-field>
+ 
+  <mat-form-field appearance="outline">
+     <mat-label>Choose a first date</mat-label>
+     <input formControlName="firstDate" matInput [matDatepicker]="firstDatePicker">
+     <mat-datepicker-toggle matSuffix [for]="firstDatePicker"></mat-datepicker-toggle>
+     <mat-datepicker #firstDatePicker></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Choose a last date</mat-label>
+    <input formControlName="lastDate" matInput [matDatepicker]="lastDatePicker">
+    <mat-datepicker-toggle matSuffix [for]="lastDatePicker"></mat-datepicker-toggle>
+    <mat-datepicker #lastDatePicker></mat-datepicker>
+ </mat-form-field>
+  <!-- <mat-form-field appearance="outline">
+    <mat-label>Confirm</mat-label>
+    <input matInput placeholder="Confirm" />
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>payment</mat-label>
+    <input type="number" matInput placeholder="Payment" />
+  </mat-form-field> -->
+</form>
+  <div mat-dialog-action [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+    <button mat-raised-button style="background-color: hsla(205, 46%, 30%, 1); color: white; margin-left: 8px;" (click)="addReservation()">{{actionBtn}}</button>
+   </div>
+</div>
+

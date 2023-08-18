@@ -12,6 +12,9 @@ import { HoteComponent } from './components/hote/hote.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { ChangepasswordComponent } from './components/changepassword/changepassword.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
+
+
 
 
 
@@ -23,14 +26,14 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'singup',component:SingupComponent},
   {path:'dashboard',component:DashboardComponent},
-  {path:'',component:HeaderComponent},
+  {path:'header',component:HeaderComponent},
   {path:'nav',component:NavComponent},
   {path:'hote',component:HoteComponent},
   {path:'contact',component:ContactComponent},
   {path:'profile',component:ProfileComponent},
   {path:'change',component:ChangepasswordComponent},
-  
 
+  {path:'',component:ToolbarComponent},
 ];
 
 @NgModule({

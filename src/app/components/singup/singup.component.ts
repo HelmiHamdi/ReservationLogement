@@ -19,16 +19,16 @@ export class SingupComponent {
 
   }
   registerform=this.builder.group({
-    // id:this.builder.control('',Validators.compose([Validators.required,Validators.minLength(3)])),
+    id:this.builder.control(''),
     nom:this.builder.control('',Validators.required),
     prenom:this.builder.control('',Validators.required),
     dateNaissance:this.builder.control('',Validators.required),
     email:this.builder.control('',Validators.compose([Validators.required,Validators.email])),
     password:this.builder.control('',Validators.compose([Validators.required])),
     phone:this.builder.control('',Validators.compose([Validators.required])),
-    gender:this.builder.control('Homme'),
-    // role:this.builder.control(''),
-    // isactive:this.builder.control(false)
+    gender:this.builder.control('male'),
+    role:this.builder.control(''),
+    isactive:this.builder.control(false)
   });
  
   proceedregisteration(){

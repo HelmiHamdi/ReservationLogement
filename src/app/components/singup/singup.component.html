@@ -35,13 +35,23 @@
                       <div class="mb-3"> 
                          <input type="number" class="form-control" formControlName="phone" placeholder="Phone">
                       </div>
-                      <div class="mb-3" >
+                      <!-- <div class="mb-3"  >
+                        <div formControlName="gender">
                         <label for="Homme"> Homme&nbsp; </label>
                         <INPUT TYPE ="radio" NAME ="sexe" ID="Homme" VALUE="Homme" CHECKED >
                             <label for="Femme" style="margin-left: 55%;"> Femme&nbsp; </label>
                             <INPUT TYPE ="radio" NAME ="sexe" ID="Femme" VALUE="Femme">
-                            
+                            </div>  
+                     </div> -->
+                     
+                      
+                     <div class="mb-3">
+                        <mat-radio-group formControlName="gender"  >
+                            <mat-radio-button value="male">Male</mat-radio-button>
+                            <mat-radio-button value="female"style="margin-left:150px;" >Female</mat-radio-button>
+                          </mat-radio-group>
                      </div>
+                
                       <div class="d-flex justify-content-between">
                         <button type="submit" class="btn btn-primary"><i class="fa fa-check" aria-hidden="true"></i>&nbsp; Signup</button>
                         <a [routerLink]="['/login']" class="btn btn-link" style="text-decoration: none; color: aliceblue;">Login</a>
