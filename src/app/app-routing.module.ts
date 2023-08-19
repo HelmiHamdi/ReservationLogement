@@ -13,6 +13,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { ChangepasswordComponent } from './components/changepassword/changepassword.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 
 
@@ -32,6 +33,7 @@ const routes: Routes = [
   {path:'contact',component:ContactComponent},
   {path:'profile',component:ProfileComponent},
   {path:'change',component:ChangepasswordComponent},
+  {path:'about',component:AboutUsComponent},
 
   {path:'',component:ToolbarComponent},
 ];

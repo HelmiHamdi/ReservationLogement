@@ -119,23 +119,33 @@
       "gender": "male",
       "role": "",
       "isactive": false
+    },
+    {
+      "id": 11,
+      "nom": "hamdi",
+      "prenom": "oussama",
+      "dateNaissance": "2023-08-18",
+      "email": "helmihamdi977@gmail.com",
+      "password": "hgjk",
+      "phone": 27128539,
+      "gender": "male",
+      "role": "",
+      "isactive": false
+    },
+    {
+      "id": 12,
+      "nom": "Hamdi",
+      "prenom": "Helmi",
+      "dateNaissance": "2023-08-18",
+      "email": "helmihamdi977@gmail.com",
+      "password": "khkjjhj",
+      "phone": 27128539,
+      "gender": "male",
+      "role": "",
+      "isactive": false
     }
   ],
   "reservation": [
-    {
-      "id": 1,
-      "id_user": 800,
-      "id_logement": 600,
-      "firstDate": "2023-08-17T23:00:00.000Z",
-      "lastDate": "2023-08-25T23:00:00.000Z"
-    },
-    {
-      "id": 2,
-      "id_user": 25,
-      "id_logement": 56,
-      "firstDate": "2023-08-24T23:00:00.000Z",
-      "lastDate": "1956-01-01T00:00:00.000Z"
-    },
     {
       "id": 3,
       "id_user": 5465,
@@ -149,6 +159,13 @@
       "id_logement": 6546,
       "firstDate": "2023-08-17T23:00:00.000Z",
       "lastDate": "2023-08-25T23:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "id_user": 4,
+      "id_logement": 4,
+      "firstDate": "2023-08-23T23:00:00.000Z",
+      "lastDate": "2023-10-27T23:00:00.000Z"
     }
   ]
 }

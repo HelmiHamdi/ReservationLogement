@@ -1,0 +1,45 @@
+.footer
+{   overflow:hidden ;
+    background-color:darkgray;
+    padding: 20px 10px;
+    top:100%;
+    position:sticky;
+    margin-top: 30px;
+}
+h1
+{
+ color: aliceblue;
+ font-size: 20px;
+}
+a
+{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 4px 10px;
+    font-size: 15px;
+
+}
+a:hover
+{
+    color: #111183;
+}
+i
+{
+    padding:0px 10px ;
+
+}
+.long-line {
+    width: 50%; /* Adjust this value as needed; 100% would span the entire width of its container */
+    height: 2px; /* Adjust the thickness of the line */
+    border: solide; /* Remove the default border */
+    background-color: #333; /* Set the line color; change as desired */
+    align-items: center; 
+    margin: 20px 0; /* Add some space above and below the line */
+}
+p
+{
+    color: aliceblue;
+    font: size 12px;
+
+}
+

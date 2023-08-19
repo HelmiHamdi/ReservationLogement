@@ -12,7 +12,7 @@ export class NavComponent implements OnInit {
       number: '1',
       name: 'home',
       icon: 'fa-solid fa-house',
-      url:'#',
+      url:'/home',
     },
     {
       number: '2',
@@ -42,7 +42,7 @@ export class NavComponent implements OnInit {
       number: '6',
       name: 'About',
       icon: 'fa-solid fa-circle-info',
-      url:'#',
+      url:'/about',
     },
     {
       number: '7',

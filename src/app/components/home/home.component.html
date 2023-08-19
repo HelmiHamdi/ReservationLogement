@@ -1,0 +1,57 @@
+<div>
+    <app-header></app-header>
+</div>
+<div class="banner">
+    <!-- <h1 class="mb-5">Un Toit òu Vous Retrouver Tous Ensemble </h1>
+     <div class="content">
+        <a routerLink="menu">Réservez maintenant<i class="bi bi-arrow-right"></i></a>
+
+     </div> -->
+    
+</div>
+<!-- step  -->
+<div class="container mt-5 mb-5">
+    <h1 class="text-center">Avec Nous <span class="highlight">profitez</span></h1>
+    <div class="row mt-5">
+        <!-- one  -->
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+                <h1>1</h1>
+                <p>le meilleur prix</p>
+            </div>
+        </div>
+<!-- two -->
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+                <h1>2</h1>
+                <p>les bons plans</p>
+            </div>
+        </div>
+        <!-- three  -->
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+                <h1>3</h1>
+                <p>le confort recherche</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--logbox-->
+
+<div class="container  mt-4 mb-4">
+    <h1 class="text-center">Découvrez <span class="highlight">tous les logements disponibles</span></h1>
+    <div class="row">
+        <div class="col-lg-3 " *ngFor="let fd of logData">
+            <div class="logbox" >
+                <img src="{{fd.logImg}}" />
+                <h1>{{fd.logName}}</h1>
+                <p>{{fd.logPrice | currency:'INR' }}</p>
+            </div>
+        </div>
+    </div>
+    <a routerLink="menu" class="viewmorbtn"> voir plus<i class="bi bi-arrow-right"></i></a>
+</div>
+
+    <app-footer></app-footer>

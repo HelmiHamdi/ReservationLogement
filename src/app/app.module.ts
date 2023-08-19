@@ -37,6 +37,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from "@angular/material/core";
 import { AboutUsComponent } from './components/about-us/about-us.component';
+import { FooterComponent } from './footer/footer.component';
 
 // import {library} from "fortawesome-svg-core";
 // import {faChevronRight , faChevronDown} from "@fortawesome/free-solid-svg-icons";
@@ -58,6 +59,7 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
     ToolbarComponent,
     DialogComponent,
     AboutUsComponent,
+    FooterComponent,
     ],
   imports: [
     CommonModule,
