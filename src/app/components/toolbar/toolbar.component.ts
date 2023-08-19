@@ -71,5 +71,7 @@ applyFilter(event: Event) {
     this.dataSource.paginator.firstPage();
   }
 }
-
+printThisPage(){
+  window.print();
+}
 }

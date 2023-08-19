@@ -166,6 +166,34 @@
       "id_logement": 4,
       "firstDate": "2023-08-23T23:00:00.000Z",
       "lastDate": "2023-10-27T23:00:00.000Z"
+    },
+    {
+      "id": 6,
+      "id_user": 54,
+      "id_logement": 655,
+      "firstDate": "2023-08-25T23:00:00.000Z",
+      "lastDate": "2021-12-16T23:00:00.000Z"
+    },
+    {
+      "id": 7,
+      "id_user": 6,
+      "id_logement": 6,
+      "firstDate": "2023-08-25T23:00:00.000Z",
+      "lastDate": "2023-09-27T23:00:00.000Z"
+    },
+    {
+      "id": 8,
+      "id_user": 8,
+      "id_logement": 8,
+      "firstDate": "2023-08-30T23:00:00.000Z",
+      "lastDate": "2023-11-22T23:00:00.000Z"
+    },
+    {
+      "id": 9,
+      "id_user": 2,
+      "id_logement": 3,
+      "firstDate": "2023-08-25T23:00:00.000Z",
+      "lastDate": "2023-08-24T23:00:00.000Z"
     }
   ]
 }
