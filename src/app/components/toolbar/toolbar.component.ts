@@ -74,4 +74,6 @@ applyFilter(event: Event) {
 printThisPage(){
   window.print();
 }
+title ='HeaderSideNav';
+sideNavStatus: boolean=false;
 }

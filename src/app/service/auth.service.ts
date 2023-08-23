@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { map } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -13,6 +14,30 @@ export class AuthService {
   }
   GetbyCode(email:any){
     return this.http.get(this.apiurl);
+  }
+  //create by post
+  postuser(data:any){
+    return this.http.post(this.apiurl,data).pipe(map((res:any)=>{
+      return res;
+    }))
+  }
+  //get
+  getuser(){
+    return this.http.get(this.apiurl).pipe(map((res:any)=>{
+      return res;
+    }))
+  }
+  //update
+  updateuser(data:any,id:number){
+    return this.http.put(this.apiurl+"/"+id,data).pipe(map((res:any)=>{
+      return res;
+    }))
+  }
+  //delete
+  deleteuser(id:number){
+    return this.http.delete(this.apiurl+"/"+id).pipe(map((res)=>{
+      return res;
+    }))
   }
   // GetAll(){
   //   return this.http.get(this.apiurl);

@@ -1,0 +1,108 @@
+<nav class="navbar navbar-light" style=" background-color: hsla(205, 46%, 30%, 1);">
+    <div class="container-fluid">
+        <h2 class="text-light primary">User MaisonLog </h2>
+        <div class="d-flex">
+            <button class="btn btn-success"data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="add()">Add User</button>&nbsp;
+            <button class="btn btn-warning">Logout</button>
+        </div>
+    </div>
+</nav>
+<!-- tableau -->
+<table class="table mt-4">
+    <thead>
+        <tr>
+            <th scop="col">Id</th>
+            <th scop="col">First Name</th>
+            <th scop="col">Last Name</th>
+            <th scop="col">DateNaissance</th>
+            <th scop="col">E-mail</th>
+            <th scop="col">Password</th>
+            <th scop="col">Phone</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Active</th>
+            <th scope="col">Role</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of alluserdata">
+        <td>{{data.id}}</td>
+        <td>{{data.nom}}</td>
+        <td>{{data.prenom}}</td>
+        <td>{{data.dateNaissance}}</td>
+        <td>{{data.email}}</td>
+        <td>{{data.password}}</td>
+        <td>{{data.phone}}</td>
+        <td>{{data.gender}}</td>
+        <td>{{data.isactive}}</td>
+        <td>{{data.role}}</td>
+        <td>
+            <button class="btn btn-info"data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="edit(data)">Edit</button>&nbsp;
+            <button class="btn btn-danger" (click)="deleteUser(data)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+</table>
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div style="background: hsla(205, 46%, 30%, 1);" class="modal-header">
+          <h5 style="color: aliceblue;font-size: 26px;margin-left: 62px;font-weight: 620;" class="modal-title" id="exampleModalLabel">USER MAISONLOC</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+           
+          </button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="formValue">
+                <div class="form-group">
+                 
+                  <input type="text" formControlName="nom" class="form-control" aria-describedby="emailHelp" placeholder="Enter your first Name"> 
+                  <small *ngIf="formValue.get('nom')?.invalid && formValue.get('nom')?.touched"class="text-danger">First Name is Required</small>
+                </div> <br>
+                <div class="form-group">
+                    
+                    <input type="text" formControlName="prenom"  class="form-control" aria-describedby="emailHelp" placeholder="Enter your last name"> 
+                    <small *ngIf="formValue.get('prenom')?.invalid && formValue.get('prenom')?.touched"class="text-danger">Last Name is Required</small>
+
+                  </div><br>
+                  <div class="form-group">
+                   
+                    <input type="date" formControlName="dateNaissance"  class="form-control"  aria-describedby="emailHelp" placeholder="Enter your date of brith"> 
+                    <small *ngIf="formValue.get('dateNaissance')?.invalid && formValue.get('dateNaissance')?.touched"class="text-danger">Date is Required</small>
+
+                  </div><br>
+                  <div class="form-group">
+                    
+                    <input type="email" formControlName="email"  class="form-control"  aria-describedby="emailHelp" placeholder="Enter your email"> 
+                    <small *ngIf="formValue.get('email')?.invalid && formValue.get('email')?.touched"class="text-danger">Email is Required</small>
+
+                </div> <br>
+                  <div class="form-group">
+                  
+                    
+                    <input type="password" formControlName="password"  class="form-control" aria-describedby="emailHelp" placeholder="Enter your password"> 
+                    <small *ngIf="formValue.get('password')?.invalid && formValue.get('password')?.touched"class="text-danger">Password is Required</small>
+
+                </div> <br>
+                  <div class="form-group">
+                    
+                    <input type="number" formControlName="phone"  class="form-control"  aria-describedby="emailHelp" placeholder="Enter your phone number"> 
+                    <small *ngIf="formValue.get('phone')?.invalid && formValue.get('phone')?.touched"class="text-danger">Phone is Required</small>
+
+                </div> <br>
+                  <div class="form-group">
+                    <mat-radio-group formControlName="gender"  >
+                        <mat-radio-button value="male">Male</mat-radio-button>
+                        <mat-radio-button value="female"style="margin-left:150px;" >Female</mat-radio-button>
+                      </mat-radio-group>
+                 </div>
+              </form>
+        </div>
+        <div class="modal-footer" style="background: hsla(205, 46%, 30%, 1);">
+          <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+          <button *ngIf="showadd" type="button" (click)="addUser()" [disabled]="formValue.invalid" class="btn btn-success">Save</button>
+          <button *ngIf="showupdate" type="button" (click)="Update()" [disabled]="formValue.invalid" class="btn btn-success">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>

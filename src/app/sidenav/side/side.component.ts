@@ -1,13 +1,17 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-nav',
-  templateUrl: './nav.component.html',
-  styleUrls: ['./nav.component.css']
+  selector: 'app-side',
+  templateUrl: './side.component.html',
+  styleUrls: ['./side.component.css']
 })
-export class NavComponent implements OnInit {
-  @Input() sideNavStatus:boolean=false;
-  list = [
+export class SideComponent implements OnInit{
+  ngOnInit(): void {
+  
+  }
+  @Input() sideNavStatus:boolean = false;
+ list = [
+  
     {
       number: '1',
       name: 'home',
@@ -40,21 +44,16 @@ export class NavComponent implements OnInit {
     },
     {
       number: '6',
-      name: 'Person',
-      icon: 'fa-solid fa-user',
-      url:'/user',
+      name: 'About',
+      icon: 'fa-solid fa-circle-info',
+      url:'./about',
     },
     {
       number: '7',
-      name: 'Reservation',
-      icon: 'fa-solid fa-university',
-      url:'/bar',
+      name: 'Contact',
+      icon: 'fa-solid fa-phone',
+      url:'./contact',
     },
-  ]
-  ngOnInit(): void {
-    
-  }
-  constructor(){}
-
-
+  
+ ];
 }

@@ -1,71 +1,97 @@
-<mat-toolbar style="background-color: hsla(205, 46%, 30%, 1) ;color: white;">
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <mat-icon>supervised_user_circle</mat-icon>
-    </button>
-    <span></span>
-    <span class="example-spacer"></span>
-  <button mat-raised-button style="background-color:white;" (click)="openDialog()">Add Reservation</button>
-    
-  </mat-toolbar>
+
+<mat-toolbar style="background-color: hsla(205, 46%, 30%, 1); color: white">
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+  >
+    <mat-icon>supervised_user_circle</mat-icon>
+  </button>
+  <span></span>
+  <span class="example-spacer"></span>
+  <button
+    mat-raised-button
+    style="background-color: white"
+    (click)="openDialog()"
+  >
+    Add Reservation
+  </button>
+</mat-toolbar>
 <div class="container">
-  <div style="margin-top: 10px;">
-    <mat-form-field style="width: 100%;">
+  <div style="margin-top: 10px">
+    <mat-form-field style="width: 100%">
       <mat-label>Filter</mat-label>
-      <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
+      <input
+        matInput
+        (keyup)="applyFilter($event)"
+        placeholder="Ex. Mia"
+        #input
+      />
     </mat-form-field>
-    
+
     <div class="mat-elevation-z8">
       <table mat-table [dataSource]="dataSource" matSort>
-    
-  
         <ng-container matColumnDef="id">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header > ID </th>
-          <td mat-cell *matCellDef="let row"> {{row.id}} </td>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>ID</th>
+          <td mat-cell *matCellDef="let row">{{ row.id }}</td>
         </ng-container>
-    
- 
+
         <ng-container matColumnDef="id_user">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header> Id_User </th>
-          <td mat-cell *matCellDef="let row"> {{row.id_user}}</td>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Id_User</th>
+          <td mat-cell *matCellDef="let row">{{ row.id_user }}</td>
         </ng-container>
-    
- 
+
         <ng-container matColumnDef="id_logement">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header> Id_Logement </th>
-          <td mat-cell *matCellDef="let row"> {{row.id_logement}} </td>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Id_Logement</th>
+          <td mat-cell *matCellDef="let row">{{ row.id_logement }}</td>
         </ng-container>
-    
+
         <ng-container matColumnDef="firstDate">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header> FirstDate </th>
-          <td mat-cell *matCellDef="let row"> {{row.firstDate | date}} </td>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>FirstDate</th>
+          <td mat-cell *matCellDef="let row">{{ row.firstDate | date }}</td>
         </ng-container>
         <ng-container matColumnDef="lastDate">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header> LastDate </th>
-          <td mat-cell *matCellDef="let row"> {{row.lastDate | date}} </td>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>LastDate</th>
+          <td mat-cell *matCellDef="let row">{{ row.lastDate | date }}</td>
         </ng-container>
         <ng-container matColumnDef="action">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header> Action </th>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Action</th>
           <td mat-cell *matCellDef="let row">
-            <button mat-icon-button color="primary" (click)="editReservation(row)">
+            <button
+              mat-icon-button
+              color="primary"
+              (click)="editReservation(row)"
+            >
               <mat-icon>edit</mat-icon>
             </button>
-            <button mat-icon-button color="warn" (click)="deleteReservation(row.id)">
+            <button
+              mat-icon-button
+              color="warn"
+              (click)="deleteReservation(row.id)"
+            >
               <mat-icon>delete</mat-icon>
             </button>
           </td>
         </ng-container>
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-    
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+
         <tr class="mat-row" *matNoDataRow>
-          <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+          <td class="mat-cell" colspan="4">
+            No data matching the filter "{{ input.value }}"
+          </td>
         </tr>
       </table>
-    
-      <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+
+      <mat-paginator
+        [pageSizeOptions]="[5, 10, 25, 100]"
+        aria-label="Select page of users"
+      ></mat-paginator>
     </div>
-    
-    
   </div>
-  <mat-icon (click)="printThisPage()" style="margin-left: 50%;margin-top: 2%; font-size: 25px;color: blue;">print</mat-icon>
+  <mat-icon
+    (click)="printThisPage()"
+    style="margin-left: 50%; margin-top: 2%; font-size: 25px; color: blue"
+    >print</mat-icon
+  >
 </div>

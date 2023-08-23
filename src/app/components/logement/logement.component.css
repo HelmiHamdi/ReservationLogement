@@ -1,0 +1,93 @@
+
+.formulaire-container {
+    width: 100%; /* Ajustez la largeur du cadre en fonction de vos besoins */
+  }
+  
+  .formulaire {
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    white-space: nowrap; /* Empêcher le texte de passer à la ligne suivante */
+    overflow: hidden; /* Masquer tout texte qui dépasse */
+    margin-right: 10px; /* Marge à droite pour séparer du formulaire */
+    margin-left: 50px;
+    text-overflow: ellipsis; /* Afficher des points de suspension (...) pour indiquer du texte masqué */
+  }
+  /* Style pour les champs de saisie de type "number" */
+  input[type="number"] {
+    padding: 10px;
+    border-radius: 10px; /* Bords arrondis */
+    border: 1px solid #535151; /* Bordure */
+    outline: none; /* Supprimer la bordure lors du focus */
+  }
+  
+  
+  /* Style pour les flèches du champ de saisie de type "number" */
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    appearance: none; /* Supprimer les flèches par défaut */
+    margin: 0; /* Aucun espacement */
+  }
+  
+  
+  
+  div.chambres {
+    display: none;
+  }
+  
+  /* Afficher la section nombre de chambres lorsque logement entier est choisi */
+  select[name="type"] option[value="logement entier"]:checked ~ div.chambres {
+    display: block;
+  }
+  
+  /* Style pour les boutons "+" et "-" */
+  .boutons-chambres {
+    display: flex;
+    align-items: center;
+  }
+  
+  .boutons-chambres button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%; /* Rend les boutons arrondis */
+    color: rgb(131, 127, 127);
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  .boutons-chambres span {
+    font-size: 18px;
+  }
+  
+  
+  .capacite,
+  .espace {
+    margin-bottom: 10px;
+    padding: 5px; /* Ajustez la valeur de padding pour réduire la taille du cadre */
+  }
+  
+  .capacite label,
+  .espace label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .capacite input,
+  .espace input {
+    padding: 5px; /* Ajustez la valeur de padding pour réduire la taille du champ de saisie */
+    font-size: 16px;
+  }
+  
+  /* Style spécifique pour le champ de capacité */
+  .capacite {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style spécifique pour le champ d'espace */
+  .espace {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }

@@ -1,0 +1,35 @@
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin: 0 auto; /* Centre le tableau horizontalement sur la page */
+    margin-bottom: 50px;
+  }
+  
+  td, th {
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    text-align: center; /* Centre le texte des titres de colonnes */
+  }
+  .container {
+    background-color: #f1f1f1; /* Couleur de fond gris */
+    padding: 50px; /* Espacement intérieur pour séparer le texte du bord du conteneur */
+  }
+  
+  
+  .title {
+    width: 60%;
+    font-size: 2rem;
+    color: black;
+  }
+  .msg{
+    width: 60%;
+    font-size: 2rem;
+    color: rgb(241, 14, 56);
+    padding: 50px;
+    display: flex;
+    align-items: left;
+  }

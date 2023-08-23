@@ -7,7 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { SingupComponent } from './components/singup/singup.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
+
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { MatIconModule } from "@angular/material/icon";
 import {MatInputModule  } from "@angular/material/input";
@@ -30,7 +30,7 @@ import { ChangepasswordComponent } from './components/changepassword/changepassw
 import {HttpClientModule} from '@angular/common/http';
 import { ToastrModule } from "ngx-toastr";
 import {ReactiveFormsModule} from '@angular/forms';
-
+import { FormsModule } from '@angular/forms'; 
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { DialogComponent } from './components/dialog/dialog.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -38,8 +38,26 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from "@angular/material/core";
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { FooterComponent } from './footer/footer.component';
+import { TableauComponent } from './components/tableau/tableau.component';
+import { LogementComponent } from './components/logement/logement.component';
 
-// import {library} from "fortawesome-svg-core";
+
+
+import { MatMenuModule } from "@angular/material/menu";
+
+import { MatDividerModule } from "@angular/material/divider";
+import { MatListModule } from "@angular/material/list";
+import { AminrevComponent } from './components/aminrev/aminrev.component';
+import { TitreComponent } from './sidenav/titre/titre.component';
+import { SideComponent } from './sidenav/side/side.component';
+import { CorpsComponent } from './sidenav/corps/corps.component';
+import { UserComponent } from './sidenav/user/user.component';
+import { PersonComponent } from './sidenav/person/person.component';
+
+
+
+
+
 // import {faChevronRight , faChevronDown} from "@fortawesome/free-solid-svg-icons";
 // library.add(faChevronRight);
 // library.add(faChevronDown);
@@ -50,7 +68,7 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     LoginComponent,
     SingupComponent,
-    DashboardComponent,
+ 
     NavComponent,
     HoteComponent,
     ContactComponent,
@@ -60,6 +78,22 @@ import { FooterComponent } from './footer/footer.component';
     DialogComponent,
     AboutUsComponent,
     FooterComponent,
+    TableauComponent,
+    LogementComponent,
+    AminrevComponent,
+    TitreComponent,
+    SideComponent,
+    CorpsComponent,
+    UserComponent,
+    PersonComponent,
+   
+  
+   
+
+  
+   
+    
+
     ],
   imports: [
     CommonModule,
@@ -84,6 +118,10 @@ import { FooterComponent } from './footer/footer.component';
     ReactiveFormsModule,
     MatNativeDateModule,
     MatFormFieldModule,
+    FormsModule,
+    MatDividerModule,
+    MatListModule,
+    MatMenuModule,
     ToastrModule.forRoot()
   ],
   providers: [],

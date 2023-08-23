@@ -1,0 +1,52 @@
+
+<div class="container">
+    <div class="map" id="mapContainer"></div>
+    <div class="formulaire-container">
+      <div class="formulaire">
+        
+          <h1>Parlez-nous de votre logement</h1>
+         
+        
+          <form (ngSubmit)="submitForm()" #logementForm="ngForm">
+           <div>
+             <label for="adresse">Adresse:</label>
+             <input type="text" id="adresse" name="adresse" [(ngModel)]="logement.adresse" required>
+  
+           </div>
+         </form>
+        
+              <div>
+                 <label for="type">Type de logement :</label>
+                  <select id="type" name="type" [(ngModel)]="logement.type" required>
+                  <option value="chambre privee">Chambre Privée</option>
+                  <option value="salle de fete">Salle de Fête</option>
+                  <option value="logement entier">Logement Entier</option>
+                   </select>
+              </div>
+    
+             <div *ngIf="logement.type === 'logement entier'">
+                   <label for="nombreChambres">Nombre de chambres :</label>
+       
+    
+                  <button type="button" (click)="decrementChambres()">-</button>
+                      <span> {{ logement.nombreChambres }}</span>
+                  <button type="button" (click)="incrementChambres()">+</button>
+          
+             </div>
+      
+       <!-- Champ de capacité pour salle de fête -->
+       <div class="capacite" *ngIf="logement.type === 'salle de fete'">
+        <label for="capacite">Capacité :</label>
+        <input type="number" id="capacite" name="capacite" [(ngModel)]="logement.capacite" required>
+       </div>
+  
+      <!-- Champ d'espace pour salle de fête -->
+       <div class="espace" *ngIf="logement.type === 'salle de fete'">
+        <label for="espace">Espace:</label>
+        <input type="number" id="espace" name="espace" [(ngModel)]="logement.espace" required>
+       </div>
+  
+        <div >
+         <button type="submit" class=" btn btn-success">Mettre à jour l'estimation</button>
+        </div>
+  </div>

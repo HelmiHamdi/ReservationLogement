@@ -1,0 +1,43 @@
+<table>
+    <thead>
+      <tr>
+        <th colspan="1">Bénéfices</th>
+        <th colspan="2">Notre plateforme</th>
+        <th colspan="3">Concurrents</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of data">
+        <td colspan="1">{{ row['Bénéfices'] }}</td>
+        <td colspan="2">{{ row['Notre plateforme'] }}</td>
+        <td colspan="3">{{ row['Concurrents'] }}</td>
+        
+      </tr>
+    </tbody>
+  </table>
+  <div class="container">
+  
+    <p class="title">Des réponses 
+     à vos questions</p>
+  
+  
+  
+   <ul>
+     <li>
+       <strong>Mon logement convient-il à la location sur votre plateforme ?</strong>
+       <p >Notre clients recherchent tous types de logements. Certains hôtes proposent des annonces pour des tiny houses. Une simple chambre d'amis peut même être une option d'hébergement idéale.</p>
+     </li>
+     <li >
+       <strong>Est-il nécessaire d'accueillir des clients à longueur d'année ?</strong>
+       <p >Pas du tout. C'est vous qui contrôlez votre calendrier. Vous pouvez accueillir des voyageurs une fois par an, quelques nuits par mois ou plus fréquemment.</p>
+     </li>
+     <li >
+        <strong>Quels conseils suivre pour devenir un excellent hôte sur votre plateforme ?</strong>
+        <p >Savoir gérer l'essentiel, c'est le principal. Gardez votre logement propre, répondez rapidement aux voyageurs et fournissez-leur les équipements dont ils ont besoin, tel que des serviettes propres. Certains hôtes aiment aussi ajouter une touche personnelle, comme un bouquet de fleurs ou une liste d'adresses locales à découvrir. Mais ce n'est pas obligatoire.</p>
+     </li>
+   </ul>
+  </div>
+  
+   
+  <p class="msg"> Avez-vous d'autres questions ? N'hésitez pas à les laisser dans un message !</p>
