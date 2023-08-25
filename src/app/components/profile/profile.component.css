@@ -1,9 +1,14 @@
 .test{
-    height: 400px;
+    height: 500px;
 }
 .margtable{
     margin-top: 50px;
 }
 .divmg{
-    margin-top: 20px;
+    margin-top: 50px;
 }
+/* Ajoute un espacement entre les lignes du tableau */
+.table-spaced tbody tr {
+    margin-bottom: 10px; /* Ajustez la valeur selon vos préférences */
+  }
+  

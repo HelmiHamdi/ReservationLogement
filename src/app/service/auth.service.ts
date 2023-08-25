@@ -45,6 +45,30 @@ export class AuthService {
   // Updateuser(id:any,inputdata:any){
   //   return this.http.put(this.apiurl+'/'+id,inputdata);
   // }
+  //************************profile********************************//
+  apiPro="http://localhost:3000/profile";
+   
+  postprofile(data:any){
+    return this.http.post(this.apiPro,data).pipe(map((res:any)=>{
+      return res;
+    }));
+  }
+  getprofile(){
+    return this.http.get(this.apiPro).pipe(map((res:any)=>{
+      return res;
+    }))
+  }
+  updateprofile(data:any,id:number){
+    return this.http.put(this.apiPro+"/"+id,data).pipe(map((res:any)=>{
+      return res;
+    }))
+  }
+  deleteprofile(id:number){
+    return this.http.delete(this.apiPro+"/"+id).pipe(map((res)=>{
+      return res;
+    }))
+  }
+  //************************reservation********************************//
   apiRes='http://localhost:3000/reservation';
   postReservation(inputdata:any){
     return this.http.post(this.apiRes,inputdata);
