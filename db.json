@@ -1,18 +1,6 @@
 {
   "user": [
     {
-      "id": 2,
-      "nom": "Hamdi",
-      "prenom": "Helmi",
-      "dateNaissance": "2023-08-19",
-      "email": "helmihamdi977@gmail.com",
-      "password": "fghjkljkjjh",
-      "phone": 27128539,
-      "gender": "male",
-      "isactive": false,
-      "role": "user"
-    },
-    {
       "id": 3,
       "nom": "Khabouchi",
       "prenom": "Chaima",
@@ -29,7 +17,7 @@
       "nom": "oussama",
       "prenom": "jaouabi",
       "dateNaissance": "2023-08-13",
-      "email": "helmihamdi977@gmail.com",
+      "email": "dfggfgg@gmail.com",
       "password": "ddddd",
       "phone": 27128539,
       "gender": "male",
@@ -59,7 +47,7 @@
     },
     {
       "id": 2,
-      "id_user": 2,
+      "id_user": 3,
       "id_logement": 5,
       "firstDate": "2023-08-25T23:00:00.000Z",
       "lastDate": "2023-08-23T23:00:00.000Z"
@@ -91,6 +79,13 @@
       "id_logement": 8,
       "firstDate": "2001-09-01T00:00:00.000Z",
       "lastDate": "2001-06-01T00:00:00.000Z"
+    },
+    {
+      "id": 7,
+      "id_user": 5,
+      "id_logement": 2,
+      "firstDate": "2023-09-28T23:00:00.000Z",
+      "lastDate": "2023-09-29T23:00:00.000Z"
     }
   ]
 }

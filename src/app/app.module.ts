@@ -40,7 +40,7 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { FooterComponent } from './footer/footer.component';
 import { TableauComponent } from './components/tableau/tableau.component';
 import { LogementComponent } from './components/logement/logement.component';
-
+// import {AgmCoreModule  } from "@agm/core";
 
 
 import { MatMenuModule } from "@angular/material/menu";
@@ -53,6 +53,7 @@ import { SideComponent } from './sidenav/side/side.component';
 import { CorpsComponent } from './sidenav/corps/corps.component';
 import { UserComponent } from './sidenav/user/user.component';
 import { PersonComponent } from './sidenav/person/person.component';
+import { MapsComponent } from './components/maps/maps.component';
 
 
 
@@ -86,6 +87,7 @@ import { PersonComponent } from './sidenav/person/person.component';
     CorpsComponent,
     UserComponent,
     PersonComponent,
+    MapsComponent,
    
   
    
@@ -122,6 +124,9 @@ import { PersonComponent } from './sidenav/person/person.component';
     MatDividerModule,
     MatListModule,
     MatMenuModule,
+    // AgmCoreModule.forRoot({
+    //   apiKey:'AIzaSyATN4GKSoIQg_41Gseuadxdqer-IP83nf8'
+    // }),
     ToastrModule.forRoot()
   ],
   providers: [],

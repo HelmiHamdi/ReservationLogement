@@ -47,13 +47,13 @@ export class ProfileComponent implements OnInit {
   }
   ngOnInit(): void {
     this.formValue=this.formBuilder.group({
-      id:this.formBuilder.control(this.obj.id),
-      nom:this.formBuilder.control(this.obj.nom,Validators.required),
-      prenom:this.formBuilder.control(this.obj.prenom,Validators.required),
-      dateNaissance:this.formBuilder.control(this.obj.dateNaissance,Validators.required),
-      email:this.formBuilder.control(this.obj.email,Validators.compose([Validators.required,Validators.email])),
-      password:this.formBuilder.control(this.obj.password,Validators.compose([Validators.required])),
-      phone:this.formBuilder.control(this.obj.phone,Validators.compose([Validators.required])),
+      id:this.formBuilder.control(''),
+      nom:this.formBuilder.control('',Validators.required),
+      prenom:this.formBuilder.control('',Validators.required),
+      dateNaissance:this.formBuilder.control('',Validators.required),
+      email:this.formBuilder.control('',Validators.compose([Validators.required,Validators.email])),
+      password:this.formBuilder.control('',Validators.compose([Validators.required])),
+      phone:this.formBuilder.control('',Validators.compose([Validators.required])),
       gender:this.formBuilder.control('male'),
      });
      this.getProfile();
@@ -114,6 +114,6 @@ ImageUpload(event:any){
  }
 
  UpdataPassword():void{
-  this.router.navigate(['corps/change']);
+  this.router.navigate(['./corps/change']);
  }
 }
